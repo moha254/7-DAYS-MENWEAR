@@ -26,7 +26,7 @@ function App() {
           className="relative h-screen flex items-center justify-center"
           style={{
             backgroundImage:
-              'url("https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")',
+              'url("img/shop.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

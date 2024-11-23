@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { ShoppingBag, X } from 'lucide-react';
-import logo from '../../download.png';
+import logo from '../../download (1).png';
 
 export default function Header() {
   const { cartItems, removeFromCart } = useCart(); // Add removeFromCart from context
