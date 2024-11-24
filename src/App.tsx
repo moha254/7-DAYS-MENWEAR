@@ -26,7 +26,7 @@ function App() {
           className="relative h-screen flex items-center justify-center"
           style={{
             backgroundImage:
-              'url("public/img/shop.jpg")',
+              'url("./img/shop.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -153,23 +153,13 @@ function App() {
               <div>
                 <h4 className="text-white font-semibold mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
-                  <a 
-                    href="https://www.facebook.com/profile.php?id=100066771768881&locale=ms_MY" 
-                    className="hover:text-blue-500 transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="#" className="hover:text-blue-500 transition">
                     <Facebook className="h-6 w-6" />
                   </a>
                   <a href="#" className="hover:text-blue-500 transition">
                     <Instagram className="h-6 w-6" />
                   </a>
-                  <a 
-                    href="https://www.tiktok.com/@7day.menswear" 
-                    className="hover:text-blue-500 transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="#" className="hover:text-blue-500 transition">
                     <FaTiktok size={24} />
                   </a>
                   <a href="#" className="hover:text-blue-500 transition">
