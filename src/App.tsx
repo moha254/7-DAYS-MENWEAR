@@ -4,16 +4,8 @@ import Header from './components/Header';
 import ProductCard from './components/ProductCard';
 import ContactForm from './components/ContactForm';
 import { products } from './data/products';
-import {
-  Shirt,
-  Award,
-  Truck,
-  Facebook,
-  Instagram,
-  MessageCircle,
-  Heart,
-} from 'lucide-react';
-import { FaTiktok } from 'react-icons/fa'; // TikTok icon from react-icons
+import { Shirt, Award, Truck, Facebook, Instagram, Heart } from 'lucide-react';
+import { FaTiktok } from 'react-icons/fa';
 
 function App() {
   return (
@@ -25,8 +17,7 @@ function App() {
         <section
           className="relative h-screen flex items-center justify-center"
           style={{
-            backgroundImage:
-              'url("./img/shop.jpg")',
+            backgroundImage: 'url("./img/shop.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -59,7 +50,7 @@ function App() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {Object.values(products)
-                .flatMap(category => category.items)
+                .flatMap((category) => category.items)
                 .map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
@@ -153,23 +144,41 @@ function App() {
               <div>
                 <h4 className="text-white font-semibold mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="hover:text-blue-500 transition">
+                  {/* Facebook */}
+                  <a
+                    href="https://web.facebook.com/profile.php?id=100066771768881&locale=ms_MY&_rdc=1&_rdr#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-500 transition"
+                  >
                     <Facebook className="h-6 w-6" />
                   </a>
-                  <a href="#" className="hover:text-blue-500 transition">
+                  {/* Instagram */}
+                  <a
+                    href="https://www.instagram.com/7daymenswear"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-500 transition"
+                  >
                     <Instagram className="h-6 w-6" />
                   </a>
-                  <a href="#" className="hover:text-blue-500 transition">
+                  {/* TikTok */}
+                  <a
+                    href="https://www.tiktok.com/@7day.menswear"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-500 transition"
+                  >
                     <FaTiktok size={24} />
-                  </a>
-                  <a href="#" className="hover:text-blue-500 transition">
-                    <MessageCircle className="h-6 w-6" />
                   </a>
                 </div>
               </div>
             </div>
             <div className="border-t border-gray-800 mt-12 pt-8 text-center">
               <p className="text-sm">© 2024 7 Days Menswear. All rights reserved.</p>
+              <p className="text-sm mt-4">
+                Contact us: <a href="tel:+254768794048" className="text-blue-400">0768794048</a> | <a href="mailto:mustafamgn07@gmail.com" className="text-blue-400">mustafamgn07@gmail.com</a>
+              </p>
               <p className="text-sm mt-2 text-gray-400 flex items-center justify-center">
                 Made by MORA TECH <Heart className="h-4 w-4 ml-1 text-red-500 fill-current" />
               </p>
