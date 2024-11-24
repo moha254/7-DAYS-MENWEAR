@@ -33,7 +33,7 @@ export default function ContactForm() {
       const total = calculateTotal();
 
       const message = generateWhatsAppMessage(orderId, total);
-      const whatsappNumber = '254792837410';
+      const whatsappNumber = '254722470594';
       window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
 
       const newReceipt: ReceiptType = {
